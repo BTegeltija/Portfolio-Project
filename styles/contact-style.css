@@ -1,0 +1,84 @@
+html {
+    background: linear-gradient(-75deg, gold 50%, silver 50%);
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 95%;
+    
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+}
+
+.navigation-item {
+    list-style: none;
+    margin: var(--spacing-1);
+    margin-right: 5px;
+    font-weight: bolder;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 800px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    
+}
+
+.contact-text {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.logo:hover {
+    background-color: silver; 
+    border: 1px;
+    border-radius: 5px;
+    animation: icon 0.3s linear;
+}
+
+@keyframes icon {
+    0%{
+        height: 60px;
+        width: 60px;
+    }
+    100%{
+        height: 70px;
+        width: 70px;
+    }
+}
